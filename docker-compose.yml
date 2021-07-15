@@ -1,0 +1,33 @@
+version: '3'
+
+
+services:
+  web:
+    build: .
+    container_name: agedcare
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/code
+      
+  queuing:
+    image: rabbitmq
+    ports:
+      - 5672
+    environment:
+      - RABBITMQ_DEFAULT_USER=admin
+      - RABBITMQ_DEFAULT_PASS=admin
+
+
+  redis:
+    image: redis:latest
+    ports: 
+      - "6379:6379"
+    expose: 
+      - 6379
+    restart: always
+  
+  worker:
+    build: .
+    command: celery -A agedcare worker -l info -E

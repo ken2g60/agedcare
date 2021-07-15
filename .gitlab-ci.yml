@@ -1,0 +1,38 @@
+image: google/cloud-sdk:alpine
+
+
+before_script:
+  - apt-get -qq update && apt-get -qq install -y python
+  - apt-get -qq update
+  - apt-get -qq install -y python python-virtualenv python-pip
+  - python -V
+
+deploy_production:
+  stage: deploy
+  environment:
+    name: Production
+  only:
+    - master
+  script:
+    - echo $SERVICE_ACCOUNT > /tmp/$CI_PIPELINE_ID.json
+    - gcloud auth activate-service-account --key-file /tmp/$CI_PIPELINE_ID.json
+    # - gcloud --quiet --project $PROJECT_ID app deploy app.yaml dispatch.yaml
+    # python manage.py collectstatic -no-input
+    # gsutil -m rsync -r ./static gs://agedcare-static
+
+
+deploy_staging:
+  stage: deploy
+  environment: 
+    name: staging
+  only:
+   - staging
+  script:
+    - echo $SERVICE_ACCOUNT > /tmp/$CI_PIPELINE_ID.json
+    - gcloud auth activate-service-account --key-file /tmp/$CI_PIPELINE_ID.json
+    # - gsutil -m rsync -r ./static gs://agedcare-static
+    # - gcloud --quiet --project $PROJECT_ID app deploy staging-app.yaml
+    # - gcloud app deploy
+
+after_script:
+  - rm /tmp/$CI_PIPELINE_ID.json
