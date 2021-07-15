@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">AgedCare</string>
+    <string name="blood_sugar">Blood Sugar</string>
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="blood_cholestrol">Blood Cholestrol</string>
+    <string name="blood_level">Blood Level</string>
+    <string name="weight">Weight</string>
+    <string name="submit">Submit</string>
+    <string name="healthdataMessage">Health Data Added Successfully!</string>
+    <string name="blood_glucose">Blood Glucose</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email_address">Email Address</string>
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
+    <string name="date_format">Date</string>
+    <string name="time_format">Time</string>
+    <string name="systolic">Systolic</string>
+    <string name="diastolic">Diastolic</string>
+    <!--- Authentication -->
+    <string name="authentication_register">Registered Successfully</string>
+    <string name="authentication_login">Login Successfully</string>
+    <string name="login">Login</string>
+    <string name="mml">mmol/L</string>
+    <string name="kg">kg</string>
+    <string name="create_account">Create Account</string>
+    <string name="already_a_member_login">Already a member? Login</string>
+    <string name="phonenumber">PhoneNumber</string>
+    <string name="register">Register</string>
+    <string name="connection">Something Happened (Check Internet Connection)</string>
+
+    <!-- settings -->
+    <string name="supporting">Greyhound divisively hello coldly wonderfully marginally far upon excluding.</string>
+    <string name="title">Title</string>
+    <string name="subhead">Subhead</string>
+    <string name="primary">Title goes here</string>
+    <string name="primary_short">Title here</string>
+    <string name="subtext">Subtitle here</string>
+    <string name="action_1">Share</string>
+    <string name="action_2">Action 2</string>
+    <string name="expanded_supporting">I\'m a thing. But, like most politicians, he promised more than he could deliver. You won\'t have time for sleeping, soldier, not with all the bed making you\'ll be doing. Then we\'ll go with that data file! Hey, you add a one and two zeros to that or we walk! You\'re going to do his laundry? I\'ve got to find a way to escape.</string>
+
+    <string name="snipper_subscription">Select Subscription Type</string>
+    <string name="package_prompt">Package List</string>
+    <string-array name="subscription">
+        <item>Select Subscription</item>
+        <item>Monthly</item>
+        <item>Three Month</item>
+        <item>Six Month</item>
+        <item>Annual</item>
+    </string-array>
+
+</resources>

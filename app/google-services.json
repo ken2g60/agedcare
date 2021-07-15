@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "210985512289",
+    "firebase_url": "https://agedcare-84425.firebaseio.com",
+    "project_id": "agedcare-84425",
+    "storage_bucket": "agedcare-84425.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210985512289:android:a01f93722f9d5a40b22920",
+        "android_client_info": {
+          "package_name": "com.knightshell.agedcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "210985512289-51oltfep0rif6fshb3juris43orms8k2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAusC7RInXaXUnDheWKQqqEN_5XL53w-8c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "210985512289-51oltfep0rif6fshb3juris43orms8k2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+   <!-- Theme.AppCompat.Light.DarkActionBar -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/secondaryColor</item>
+    </style>
+
+    <style name="NumberPickerText">
+        <item name="android:textColorPrimary">@android:color/holo_purple</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="colorControlNormal">@color/transparent</item>
+    </style>
+
+</resources>
